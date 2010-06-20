@@ -1,0 +1,15 @@
+<h1>New curta</h1>
+
+<% form_for(@curta) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :texto %><br />
+    <%= f.text_field :texto %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', curtas_path %>

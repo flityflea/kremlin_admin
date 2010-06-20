@@ -1,0 +1,24 @@
+<h1>Editing concerto</h1>
+
+<% form_for(@concerto) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :local %><br />
+    <%= f.text_field :local %>
+  </p>
+  <p>
+    <%= f.label :localidade %><br />
+    <%= f.text_field :localidade %>
+  </p>
+  <p>
+    <%= f.label :data %><br />
+    <%= f.date_select :data %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @concerto %> |
+<%= link_to 'Back', concertos_path %>

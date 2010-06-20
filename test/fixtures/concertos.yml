@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  local: MyString
+  localidade: MyString
+  data: 2010-06-20
+
+two:
+  local: MyString
+  localidade: MyString
+  data: 2010-06-20
